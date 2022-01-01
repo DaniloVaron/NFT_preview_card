@@ -1,6 +1,195 @@
+:root {
+  /* Primario */
+
+  --Azul_suave: hsl(215, 51%, 70%);
+  --Cian: hsl(178, 100%, 50%);
+
+  /* Neutral */
+
+  --Azul_oscuro_principal: hsl(217, 54%, 11%);
+  --Azul_oscuro_tarjeta: hsl(216, 50%, 16%);
+  --Azul_oscuro_linea: hsl(215, 32%, 27%);
+  --Blanco: hsl(0, 0%, 100%);
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: var(--Azul_oscuro_principal);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Contenedor */
+.container {
+  display: flex;
+  /* margin: auto auto; */
+  width: 90%;
+  height: 600px;
+  /* background: #fff; */
+}
+
+/* Parrafos del contenedor */
+.container p {
+  margin: 0;
+  line-height: 1.6;
+  /* color: var(--Azul_desaturado); */
+}
+
+/* Contenedor sombra */
+.contenedor_sombra {
+  margin: auto;
+  padding: 20px;
+  width: 350px;
+  border-radius: 1em;
+  overflow: hidden;
+  background: var(--Azul_oscuro_linea);
+}
+
+/* Carta */
+.card {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  margin: auto;
+  flex-direction: column;
+  border-radius: 1em;
+  max-width: 300px;
+  max-height: 530px;
+  background-color: var(--Azul_oscuro_tarjeta);
+}
+
+/* Imagen Principal */
+.imagen_p {
+  width: 270px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 1em;
+}
+
+/* Información */
+.info {
+  color: var(--Blanco);
+}
+
+/* Titulo principal */
+.titulo {
+  display: inline-block;
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+/* hover del titulo */
+.titulo:hover {
+  color: var(--Cian);
+  cursor: pointer;
+}
+
+/* Texto principal */
+.texto {
+  /* font-size: 18px; */
+  color: var(--Azul_suave);
+}
+
+/* Cantidad y Tiempo */
+.cantidad_tiempo {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  font-size: 80%;
+}
+
+/* Modena */
+.moneda {
+  display: flex;
+  align-items: center;
+  color: var(--Cian);
+}
+
+/* Imagen de la moneda */
+.moneda img {
+  padding-right: 5px;
+  height: 15px;
+}
+
+/* Tiempo */
+.tiempo {
+  display: flex;
+  align-items: center;
+  color: var(--Azul_suave);
+}
+
+/* Imagen del tiempo */
+.tiempo img {
+  padding-right: 7px;
+  height: 15px;
+}
+
+/* linea hr */
+.linea {
+  margin: 0;
+  background-color: var(--Azul_oscuro_linea);
+  height: 1px;
+  border: 0;
+}
+
+/* Autor */
+.autor {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  color: var(--Azul_suave);
+}
+
+/* Imagen de la clase autor */
+.autor img {
+  width: 30px;
+  height: 30px;
+  border: 1px solid;
+  color: var(--Blanco);
+  border-radius: 15px;
+}
+
+/* Boton de la clase autor */
+.autor a {
+  border: none;
+  /* padding: 5px 10px;
+        border-radius: 10px;
+        font-weight: bold; */
+  cursor: pointer;
+  /* transition: all 0.2s ease-in-out; */
+  text-decoration: none;
+  /* font-size: 13px; */
+  color: var(--Blanco);
+}
+
+/* hover del boton del autor */
+.autor a:hover {
+  color: var(--Cian);
+}
+
+/* Parrafo de la clase autor */
+.autor p {
+  padding-left: 15px;
+  font-size: 90%;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
+  color: var(--Blanco);
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
